@@ -1,0 +1,85 @@
+{ Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'hammerst_denim'@'localhost' (using password: YES)
+    at Handshake.Sequence._packetToError (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol\sequences/Sequence.js:47:14)
+    at Handshake._packetToError [as ErrorPacket] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol\sequences/Handshake.js:124:18)
+    at Protocol._parsePacket (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:278:3)
+    at Parser._onPacket [as write] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Parser.js:76:12)
+    at Protocol.write (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:38:16)
+    at Socket.write (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib/Connection.js:91:28)
+    at Socket.apply (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Protocol._enqueue (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:144:48)
+    at Protocol._enqueue [as handshake] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:51:23)
+    at Connection.handshake [as connect] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib/Connection.js:118:18)
+    at Object.connect (D:\WEBSITE\hammerstout_cra_ssr_client_v2\server\config/conn.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Module._compile (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\pirates\lib\index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.newLoader [as .js] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\pirates\lib\index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage:
+   'Access denied for user \'hammerst_denim\'@\'localhost\' (using password: YES)',
+  sqlState: '28000',
+  fatal: true }
+{ Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'hammerst_denim'@'localhost' (using password: YES)
+    at Handshake.Sequence._packetToError (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol\sequences/Sequence.js:47:14)
+    at Handshake._packetToError [as ErrorPacket] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol\sequences/Handshake.js:124:18)
+    at Protocol._parsePacket (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:278:3)
+    at Parser._onPacket [as write] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Parser.js:76:12)
+    at Protocol.write (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:38:16)
+    at Socket.write (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib/Connection.js:91:28)
+    at Socket.apply (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Protocol._enqueue (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:144:48)
+    at Protocol._enqueue [as handshake] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:51:23)
+    at Connection.handshake [as connect] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib/Connection.js:118:18)
+    at Object.connect (D:\WEBSITE\hammerstout_cra_ssr_client_v2\server\config/conn.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Module._compile (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\pirates\lib\index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.newLoader [as .js] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\pirates\lib\index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage:
+   'Access denied for user \'hammerst_denim\'@\'localhost\' (using password: YES)',
+  sqlState: '28000',
+  fatal: true }
+{ Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'hammerst_denim'@'localhost' (using password: YES)
+    at Handshake.Sequence._packetToError (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol\sequences/Sequence.js:47:14)
+    at Handshake._packetToError [as ErrorPacket] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol\sequences/Handshake.js:124:18)
+    at Protocol._parsePacket (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:278:3)
+    at Parser._onPacket [as write] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Parser.js:76:12)
+    at Protocol.write (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:38:16)
+    at Socket.write (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib/Connection.js:91:28)
+    at Socket.apply (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib/Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    --------------------
+    at Protocol._enqueue (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:144:48)
+    at Protocol._enqueue [as handshake] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib\protocol/Protocol.js:51:23)
+    at Connection.handshake [as connect] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\mysql\lib/Connection.js:118:18)
+    at Object.connect (D:\WEBSITE\hammerstout_cra_ssr_client_v2\server\config/conn.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:689:30)
+    at Module._compile (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\pirates\lib\index.js:99:24)
+    at Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+    at Object.newLoader [as .js] (D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\pirates\lib\index.js:104:7)
+    at Module.load (internal/modules/cjs/loader.js:599:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage:
+   'Access denied for user \'hammerst_denim\'@\'localhost\' (using password: YES)',
+  sqlState: '28000',
+  fatal: true }
+[BABEL] Note: The code generator has deoptimised the styling of D:\WEBSITE\hammerstout_cra_ssr_client_v2\node_modules\lodash\lodash.js as it exceeds the max of 500KB.

@@ -1,0 +1,28 @@
+DEVELOPMENT App listening on port 5500!
+MySql connected
+[0mGET /api/content/home [36m304 [0m842.973 ms - -[0m
+DEVELOPMENT App listening on port 5500!
+MySql connected
+DEVELOPMENT App listening on port 5500!
+MySql connected
+[0mGET / [33m404 [0m3.520 ms - 139[0m
+[0mGET /favicon.ico [33m404 [0m0.928 ms - 150[0m
+[0mGET /api/content/home [32m200 [0m1303.381 ms - 14075[0m
+DEVELOPMENT App listening on port 4000!
+MySql connected
+DEVELOPMENT App listening on port 5500!
+MySql connected
+[0mGET /api/content/home [36m304 [0m45.468 ms - -[0m
+[0mGET /api/content/home [36m304 [0m40.561 ms - -[0m
+[0mGET /api/content/home [36m304 [0m66.933 ms - -[0m
+DEVELOPMENT App listening on port 5500!
+MySql connected
+DEVELOPMENT App listening on port 5500!
+MySql connected
+[0mGET /api/content/home [36m304 [0m44.632 ms - -[0m
+DEVELOPMENT App listening on port 5500!
+MySql connected
+DEVELOPMENT App listening on port 5500!
+MySql connected
+DEVELOPMENT App listening on port 5500!
+MySql connected
