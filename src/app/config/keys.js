@@ -31,10 +31,10 @@ export default {
         expiresIn: '2d'
     },
     origin:{
-        url:"http://localhost:3000"
+        url:"https://hammerstout-client.herokuapp.com/"
     },
     media:{
-        url:"https://media.hammerstoutdenim.com"
+        url: "/media"
     }
 };
 

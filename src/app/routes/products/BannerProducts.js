@@ -10,7 +10,7 @@ const BannerProducts = props => {
   return (
     <Grid container justify="center" direction="row" >
         
-          {image.hasOwnProperty('banner') && image.banner.map(id=>{
+          {image.hasOwnProperty('banner') && image.banner.length > 0 && image.banner.map(id=>{
             return(
                 <Grid item md={12} xs={12} key={id.public_id}>
                     <img src={keys.media.url+id.public_id} alt={id.alt} style={{maxWidth:"100%"}}/>
@@ -18,7 +18,7 @@ const BannerProducts = props => {
             )
         })}
 
-          {image.hasOwnProperty('banner_promo') && image.banner_promo.map(id => {
+          {image.hasOwnProperty('banner_promo') && image.banner_promo.length > 0 && image.banner_promo.map(id => {
               return (
                   <Grid item md={12} xs={12} key={id.public_id}>
                       <img src={keys.media.url+id.public_id} alt={id.alt} style={{ maxWidth: "100%" }}/>

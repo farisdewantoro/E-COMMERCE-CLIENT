@@ -1,6 +1,6 @@
 // add this file to .gitignore
 import dev from './keys-dev';
-import production from './keys-production';
+// import production from './keys-production';
 
 let keys = dev;
 // if(process.env.NODE_ENV !== "production"){

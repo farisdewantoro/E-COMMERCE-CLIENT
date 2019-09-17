@@ -22,49 +22,50 @@ export default  {
         expiresIn:'2d' 
     },
     origin:{
-        url:"http://localhost:3000",
-        redirectProvider:"http://localhost:5000", //DEV
+        url:"https://hammerstout-client.herokuapp.com",
+        redirectProvider: "https://hammerstout-admin.herokuapp.com/", //DEV
         // redirectProvider: "http://localhost:3000", //PROD LOCAL
-        redirectLogin:"http://localhost:3000/sign-in",
-        redirect:"http://localhost:3000/carts",
-        redictProfile:"http://localhost:3000/my-account",
-        confirmPay:"https://hammerstoutdenim.com/confirm-payment"
+        redirectLogin:"https://hammerstout-client.herokuapp.com/sign-in",
+        redirect:"https://hammerstout-client.herokuapp.com/carts",
+        redictProfile:"https://hammerstout-client.herokuapp.com/my-account",
+        confirmPay:"https://hammerstout-client.herokuapp.com/confirm-payment"
     },
-    rajaongkir:{
-        key:"850129b7327c8206f3875333eb281f0e",
+    rajaongkir: {
+        key: process.env.RAJA_ONGKIR_KEY,
         originId: 23,
         name: "bandung",
     },
-    rajasms:{
-        key:"457f38ca6a3265ff7ee62df327d70854",
-        username:"hammerstoutdenim"
+    rajasms: {
+        key: process.env.RAJA_SMS,
+        username: process.env.RAJA_SMS_USERNAME
     },
-    midtrans:{
-        url:"https://api.sandbox.midtrans.com",
-        id:"G592798515",
-        clientKey:"SB-Mid-client-HrVL5cJ4IYBDkfhy",
-        serverKey:"SB-Mid-server-pLVZ9unirbj5FOCqTf9qIBM4",
-        isProduction:false
-        // url: "https://api.midtrans.com",
-        // id: "G592798515",
-        // clientKey: "Mid-client-Wn88s0ecuXz5VQoE",
-        // serverKey: "Mid-server-JKiiGZJ6mH39aIrEZGCLjWWA",
-        // isProduction:true
+    midtrans: {
+        url: "https://api.sandbox.midtrans.com",
+        id: process.env.MIDTRANS_ID,
+        clientKey: process.env.MIDTRANS_CLIENT_KEY,
+        serverKey: process.env.MIDTRANS_SERVER_KEY,
+        isProduction: false
     },
     mode:{
         active:true,
         key:"2DCtkGVe-x6789jifmqs53v%^&@$6sbgg05u3fkbcDuDxDDqwzD2xc--23kv,df594.0ut79s41qi0lhg"
     },
-    instagram:{
+    instagram: {
         access_token: instagramKey.access_token,
-        clientID:'02fb6221724249ef9df4af191679b6f9',
-        clientSecret:'ef08d2d4b38a47939d6ebd7167ba49e6',
-        redirect:'http://localhost:5000/api/instagram/refresh/token'
+        clientID: process.env.INSTAGRAM_ID,
+        clientSecret: process.env.INSTAGRAM_SECRET,
+        redirect: 'https://hammerstout-admin.herokuapp.com/api/instagram/refresh/token'
     },
     database: {
-        host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'hammerst_hammer'
+        host: process.env.DATABASE_HOST,
+        user: process.env.DATABASE_USER,
+        password: process.env.DATABASE_PASSWORD,
+        database: process.env.DATABASE_DATABASE
     }
 };
+
+
+
+
+
+

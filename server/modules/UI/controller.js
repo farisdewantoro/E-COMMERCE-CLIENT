@@ -63,10 +63,13 @@ left join product_discount as pd on pd.id =
 (SELECT pd1.id from product_discount as pd1 where p.id = pd1.product_id and now() between pd1.valid_from and pd1.valid_until)
 left join product_image as pi on pi.id = (SELECT pi1.id from product_image as pi1 where pi1.product_id = p.id order by pi1.product_id asc limit 1)
 left join images as i on pi.image_id = i.id 
-group by p.name,p.slug,p.description,p.regular_price,pc.product_id,
-category_slug,category_type,category_type_slug,
+group by p.id,p.name,p.slug,p.description,p.regular_price,pc.product_id,
+category_slug,
+category_type,
+category_type_slug,
 pv.hex_color,pv.original_color,
-pd.discount_percentage,pd.discount_value
+pd.discount_percentage,pd.discount_value,
+i.public_id,i.link
 order by p.created_at desc limit 8
 
     `;
@@ -91,10 +94,12 @@ left join product_discount as pd on pd.id =
 (SELECT pd1.id from product_discount as pd1 where p.id = pd1.product_id and now() between pd1.valid_from and pd1.valid_until)
 left join product_image as pi on pi.id = (SELECT pi1.id from product_image as pi1 where pi1.product_id = p.id order by pi1.product_id asc limit 1)
 left join images as i on pi.image_id = i.id 
-group by p.name,p.slug,p.description,p.regular_price,pc.product_id,
-category_slug,category_type,category_type_slug,
+group by p.id,p.name,p.slug,p.description,p.regular_price,pc.product_id,category_slug,
+category_type,
+category_type_slug,
 pv.hex_color,pv.original_color,
-pd.discount_percentage,pd.discount_value
+pd.discount_percentage,pd.discount_value,
+i.public_id,i.link
 order by p.created_at desc limit 8`
 async.parallel({
     slider:function(callback){

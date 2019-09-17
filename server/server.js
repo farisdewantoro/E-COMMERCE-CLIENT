@@ -39,12 +39,9 @@ import csrf from 'csurf';
 import fs from 'fs';
 
 // // Our loader - this basically acts as the entry point for each page load
-// import loader from "./loader";
-if (process.env.NODE_ENV === "production") {
-  (async () => {
-    const loader = await import('./loader.js');
-  })();
-}
+import loader from "./loader";
+
+
 // const loader = {};
 // if(process.env.NODE_ENV === 'production'){
 //   loader = require('./loader');
