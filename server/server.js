@@ -74,24 +74,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 let middleware = [ensureSession];
 
-// NOTE: UNCOMMENT THIS IF YOU WANT THIS FUNCTIONALITY
-/*
-  Forcing www and https redirects in production, totally optional.
 
-  http://mydomain.com
-  http://www.mydomain.com
-  https://mydomain.com
-
-  Resolve to: https://www.mydomain.com
-*/
-if (process.env.NODE_ENV === 'production') {
-  app.use(
-    forceDomain({
-      hostname: 'www.hammerstoutdenim.com',
-      protocol: 'https'
-    })
-  );
-}
 
 
 
