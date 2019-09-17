@@ -10,7 +10,6 @@ hammer.sql
 
 # production
 /build
-/server/config/keys-production.js
 # misc
 .DS_Store
 .env.local
