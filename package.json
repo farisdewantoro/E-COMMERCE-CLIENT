@@ -81,7 +81,7 @@
     "uuid": "^3.3.2",
     "validator": "^10.11.0"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "cross-env PORT=40000 NODE_ENV=production node ./server/index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
